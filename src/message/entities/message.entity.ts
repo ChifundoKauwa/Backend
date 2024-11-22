@@ -7,7 +7,7 @@ export class message {
     @Column()
     message:string
     @Column({type:'timestamp',default:()=>'CURRENT_TIMESTAMP'})
-    SentAt:Date;
+    timestamp:Date;
   //  @ManyToOne(()=>user,(user)=>user.messages,{eager:true})
     //user:user
 
