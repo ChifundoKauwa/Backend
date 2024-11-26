@@ -1,5 +1,7 @@
 import { TypeOrmModuleOptions } from "@nestjs/typeorm";
-import { message} from "src/message/entities/message.entity";
+import { message } from "src/message/entities/message.entity";
+import { user } from "src/user/user.entity";
+import { hostel } from "src/Hostel/hostel.entity";
 
 export const typeormconfig:TypeOrmModuleOptions={
     type:'mysql',
@@ -8,7 +10,7 @@ export const typeormconfig:TypeOrmModuleOptions={
     username:'root',
     password:'',
     database:'accomodation',
-    entities:[message],
-    synchronize:false,
+    entities:[message,user,hostel],
+    synchronize:true,
     
 }
