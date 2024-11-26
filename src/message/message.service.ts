@@ -3,7 +3,7 @@ import { CreateMessageDto } from './dto/create-message.dto';
 import { UpdateMessageDto } from './dto/update-message.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { message } from './entities/message.entity';
+import { message } from './message.entity';
 
 
 @Injectable()
