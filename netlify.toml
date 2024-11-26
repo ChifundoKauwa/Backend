@@ -1,0 +1,8 @@
+# Add netlify.toml file in your root directory
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "functions"
+
+[dev]
+  command = "npm run start:dev"
