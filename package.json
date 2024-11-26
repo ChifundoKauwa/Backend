@@ -24,8 +24,8 @@
 
   "scripts": {
 
-     "build": "nest build",
-    "postbuild": "cp package.json dist/package.json",
+     "build": "nest build && cp package.json netlify/functions/server/package.json",
+    
   
 
 
