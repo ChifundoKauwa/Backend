@@ -2,14 +2,18 @@ import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 import { message } from "src/message/message.entity";
 import { user } from "src/user/user.entity";
 import { hostel } from "src/Hostel/hostel.entity";
+import dotenv from 'dotenv';
+dotenv.config();
+
+
 
 export const typeormconfig:TypeOrmModuleOptions={
     type:'mysql',
-    host:process.env.DB_HOST,
+    host:'sql3.freemysqlhosting.net',
     port:3306,
-    username:process.env.DB_USERNAME,
-    password:process.env.DB_PASSWORD,
-    database:process.env.BD_NAME,
+    username:'sql3747710',
+    password:'YMmm1RwhhT',
+    database:'sql3747710',
     entities:[message,user,hostel],
     synchronize:true,
     
