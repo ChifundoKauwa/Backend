@@ -4,10 +4,14 @@ import { AuthService } from './auth/auth.service';
 import { LocalAuthGuard } from './auth/local-auth.guard';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
 
-@Controller()
+@Controller('api')
 export class AppController {
   constructor(private readonly authService: AuthService) {}
   @UseGuards(LocalAuthGuard)
+  @Get()
+  getHello():string{
+    return 'welcome to api!!';
+  }
   @Post('auth/login')
   async login(@Request() req){
     return this.authService.login(req.user);
