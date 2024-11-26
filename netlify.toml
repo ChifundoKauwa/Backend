@@ -1,8 +1,3 @@
-# Add netlify.toml file in your root directory
 [build]
-  command = "npm run build"
-  publish = "dist"
-  functions = "functions"
-
-[dev]
-  command = "npm run start:dev"
+  command = "npm run build"  #  build command
+  publish = "dist"           # build output folder (adjust this to your framework)
