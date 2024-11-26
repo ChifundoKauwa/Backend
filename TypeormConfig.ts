@@ -2,8 +2,7 @@ import { TypeOrmModuleOptions } from "@nestjs/typeorm";
 import { message } from "src/message/message.entity";
 import { user } from "src/user/user.entity";
 import { hostel } from "src/Hostel/hostel.entity";
-import dotenv from 'dotenv';
-dotenv.config();
+
 
 
 
