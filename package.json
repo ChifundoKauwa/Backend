@@ -24,7 +24,7 @@
 
   "scripts": {
 
-     "build": "nest build && cp package.json netlify/functions/server/package.json",
+     "build": "nest build && mkdir -p netlify/functions/server && cp package.json netlify/functions/server/package.json",
     
   
 
