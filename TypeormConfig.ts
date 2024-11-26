@@ -5,11 +5,11 @@ import { hostel } from "src/Hostel/hostel.entity";
 
 export const typeormconfig:TypeOrmModuleOptions={
     type:'mysql',
-    host:'localhost',
+    host:process.env.DB_HOST,
     port:3306,
-    username:'root',
-    password:'',
-    database:'accomodation',
+    username:process.env.DB_USERNAME,
+    password:process.env.DB_PASSWORD,
+    database:process.env.BD_NAME,
     entities:[message,user,hostel],
     synchronize:true,
     
