@@ -24,7 +24,8 @@
 
   "scripts": {
 
-     "build": "nest build && if not exists netlify\\functions\\server mkdir  netlify\\functions\\server && xcopy package.json netlify\\functions\\server /Y ",
+     "build": "nest build",
+     
     
   
 

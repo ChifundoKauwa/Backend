@@ -1,9 +1,0 @@
-# Add netlify.toml file in your root directory
-[build]
-  command = "npm run build"
-  functions = "netlify/functions"
-
-[dev]
-  command = "npm run start:dev"
-  [[plugins]]
-  package = "@netlify/plugins-functions-install-core-packages"
