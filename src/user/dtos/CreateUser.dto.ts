@@ -9,7 +9,12 @@ import {
 export class CreateUserDto {
   @IsNotEmpty()
   @IsString()
-  username: string;
+  firstname: string;
+
+  @IsNotEmpty()
+  @IsString()
+  lastname: string;
+
 
   @IsNotEmpty()
   @IsEmail({}, { message: 'Invalid email format' })
@@ -21,5 +26,15 @@ export class CreateUserDto {
     message:
       'Password must be at least 8 characters long and contain both letters and numbers',
   })
+
   password: string;
+
+  @IsNotEmpty()
+  @MinLength(8)
+  @Matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{6,}$/, {
+    message:
+      'Password must be at least 8 characters long and contain both letters and numbers',
+  })
+  
+  confirmpassword: string;
 }

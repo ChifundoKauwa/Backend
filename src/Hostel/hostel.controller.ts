@@ -19,7 +19,7 @@ export class HostelController {
   constructor(private hostelService: HostelService) {}
 
   @Post('landlord')
-  @Roles('LandLord')
+  
   @UseGuards(RolesGuard)
   async create(@Body() createHostelDto: CreateHostelDto) {
     return this.hostelService.create(createHostelDto);

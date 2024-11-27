@@ -28,8 +28,12 @@ export class UserService {
   // Find hostel by title
   async findOne(query: string): Promise<user> {
     return this.userRepository.findOne({
-      where: [{ username: query }],
+      where: [{ firstname: query ,lastname: query}],
     });
+  }
+
+  async findAll(): Promise<user[]> {
+    return this.userRepository.find();
   }
 
   // Delete a hostel by ID

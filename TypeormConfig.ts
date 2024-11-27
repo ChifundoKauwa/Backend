@@ -14,6 +14,6 @@ export const typeormconfig:TypeOrmModuleOptions={
     password:'YMmm1RwhhT',
     database:'sql3747710',
     entities:[message,user,hostel],
-    synchronize:false,
+    synchronize:true,
     
 }
