@@ -8,7 +8,7 @@ export class CreateHostelDto {
 
   @IsNotEmpty()
   @IsString()
-  title: string;
+  productName: string;
 
   @IsNotEmpty()
   @IsString()
