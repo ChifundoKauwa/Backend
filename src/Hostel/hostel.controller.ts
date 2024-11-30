@@ -22,6 +22,7 @@ export class HostelController {
   
   @UseGuards(RolesGuard)
   async create(@Body() createHostelDto: CreateHostelDto) {
+    console.log(createHostelDto);
     return this.hostelService.create(createHostelDto);
   }
 
