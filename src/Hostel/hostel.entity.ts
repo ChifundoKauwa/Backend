@@ -14,9 +14,8 @@ export class hostel {
   @Column()
   image: string;
 
-  @Column()
-  price: NumericType;
-
+  @Column('decimal',{precision:10,scale:2})
+  price: string
   @Column()
   location: string;
 }
