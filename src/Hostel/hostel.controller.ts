@@ -42,4 +42,10 @@ export class HostelController {
   async remove(@Param('id') id: number): Promise<void> {
     await this.hostelService.remove(id);
   }
+
+  // getting hestels
+  @Get()
+  gethostels(){
+    return this.hostelService.findAll();
+  }
 }
