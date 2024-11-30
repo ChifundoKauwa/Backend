@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString,IsUrl } from 'class-validator';
+import { IsNotEmpty, IsString } from 'class-validator';
 
 
 export class CreateHostelDto {
@@ -16,10 +16,5 @@ export class CreateHostelDto {
 
   @IsNotEmpty()
   @IsString()
-  location: string;
-
-  @IsNotEmpty()
-  @IsString()
-  @IsUrl()
   image: string;
 }
