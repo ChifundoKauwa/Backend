@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsString,IsUrl } from 'class-validator';
+import { NumericType } from 'typeorm';
 
 export class CreateHostelDto {
   @IsNotEmpty()
@@ -11,7 +12,7 @@ export class CreateHostelDto {
 
   @IsNotEmpty()
   @IsString()
-  price: number;
+  price: NumericType;
 
   @IsNotEmpty()
   @IsString()

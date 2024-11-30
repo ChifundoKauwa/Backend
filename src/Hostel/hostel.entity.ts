@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, NumericType } from 'typeorm';
 
 @Entity()
 export class hostel {
@@ -15,7 +15,7 @@ export class hostel {
   image: string;
 
   @Column()
-  price: number;
+  price: NumericType;
 
   @Column()
   location: string;
