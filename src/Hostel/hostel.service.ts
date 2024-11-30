@@ -22,6 +22,11 @@ export class HostelService {
     });
   }
 
+  async findAll(): Promise<hostel[]> {
+    return this.hostelRepository.find();
+  }
+
+
   // Delete a Hostel by ID
   async remove(id: number): Promise<void> {
     await this.hostelRepository.delete(id);
