@@ -15,7 +15,7 @@ export class hostel {
   image: string;
 
   @Column()
-  price: string;
+  price: number;
 
   @Column()
   location: string;
